@@ -1,0 +1,23 @@
+{
+  "title": "Latest Deep Learning Trends in Industry (2026)",
+  "summary": [
+    "Inference compute scaling is supplementing pretraining scale, driving accuracy in reasoning tasks through long intermediate chains.",
+    "Post-training relies increasingly on reinforcement learning with verifiable rewards, using mechanical checks like unit tests and mathematical proofs.",
+    "Sparse architectures like Mixture-of-Experts and quantization methods like QLoRA enable efficient execution and fine-tuning on smaller hardware.",
+    "Product design has transitioned from single prompts to multi-step AI agents requiring sophisticated orchestration, context management, and sandboxing.",
+    "Multimodality is becoming standard, with native integration of text, vision, speech, and video for applications like document processing and UI automation.",
+    "Data pipelines heavily utilize synthetic data to address scarcity, while private benchmarks are deployed to counter contamination.",
+    "Inference expense has overtaken training costs, making serving optimizations like KV caching and speculative decoding critical for margins.",
+    "Governance and content provenance have become formal compliance and procurement requirements."
+  ],
+  "topics": [
+    "Inference Scaling",
+    "Reinforcement Learning",
+    "Model Quantization and MoE",
+    "AI Agents and Tool Use",
+    "Native Multimodality",
+    "Synthetic Data and Benchmark Evaluation",
+    "Inference Infrastructure and Economics",
+    "AI Governance and Provenance"
+  ]
+}

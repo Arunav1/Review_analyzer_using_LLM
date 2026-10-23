@@ -1,0 +1,90 @@
+LATEST DEEP LEARNING TRENDS IN INDUSTRY
+=======================================
+(Reflects developments through early 2026.)
+
+
+1. SCALING INFERENCE, NOT ONLY PARAMETERS
+
+For most of the past decade, capability gains came from larger models
+and more pretraining data. That emphasis has shifted. Reasoning models
+spend additional compute at inference time, producing long intermediate
+chains before answering, and this buys accuracy on mathematics, code and
+planning tasks that parameter scaling alone did not deliver. The
+practical consequence is a new cost axis: teams now budget tokens per
+query, not only GPU-hours per training run.
+
+
+2. REINFORCEMENT LEARNING WITH VERIFIABLE REWARDS
+
+Post-training has moved beyond human preference data. Wherever
+correctness can be checked mechanically - unit tests pass, a proof
+checks, a number matches - models are trained directly against that
+signal. Critic-free algorithms such as GRPO made this affordable by
+replacing the value network with a group-relative baseline. Software
+engineering is a natural fit, since compilation and test execution are
+automatic reward functions.
+
+
+3. SPARSE ARCHITECTURES AND SMALLER DEPLOYED MODELS
+
+Mixture-of-Experts routing lets a model hold a large total parameter
+count while activating only a fraction per token, improving quality per
+unit of serving cost. In parallel, distillation and quantization push
+capable models onto single GPUs, laptops and phones. Four-bit
+quantization combined with low-rank adapters (QLoRA) is now routine for
+fine-tuning on commodity hardware, which has widened who can do applied
+research.
+
+
+4. AGENTS AND TOOL USE
+
+The dominant product pattern is no longer a single prompt and response.
+Systems plan, call tools, read and write files, browse, and iterate
+against feedback. Engineering effort has shifted toward orchestration:
+context management, retries, sandboxing, and evaluation of multi-step
+trajectories rather than single outputs. Most teams report reliability,
+not raw capability, as the bottleneck.
+
+
+5. MULTIMODALITY AS A DEFAULT
+
+Text-only interfaces are becoming the exception. Vision-language models
+handle documents, screenshots and user interfaces, while speech and
+video are increasingly native rather than bolted on. Industrial use
+concentrates on document understanding, visual inspection, and interface
+automation.
+
+
+6. DATA AND EVALUATION PRESSURE
+
+High-quality human text is scarce relative to demand, so synthetic and
+curated data pipelines have become a core competency. Benchmark
+contamination has simultaneously made evaluation harder: public
+benchmarks leak into training corpora, so teams build private,
+time-stamped held-out sets and lean on human preference comparisons.
+
+
+7. INFRASTRUCTURE AND ECONOMICS
+
+Serving efficiency now determines margins - paged key-value caches,
+continuous batching, and speculative decoding are standard. Custom
+accelerators compete with general-purpose GPUs, and for mature
+deployments inference has overtaken training as the larger share of
+production spend.
+
+
+8. GOVERNANCE AND PROVENANCE
+
+Regulatory frameworks, content provenance and watermarking, and
+disclosure requirements for AI-generated material have moved from policy
+discussion into procurement requirements, publisher rules and conference
+submission policies.
+
+
+TAKEAWAY
+
+The centre of gravity has moved from pretraining scale toward
+post-training methods, inference efficiency, and the system design that
+surrounds a model. For practitioners, the differentiating skills are
+increasingly evaluation design, data curation and orchestration rather
+than architecture novelty alone.
